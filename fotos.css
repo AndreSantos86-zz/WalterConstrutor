@@ -1,1 +1,21 @@
 @charset "UTF8";
+.galeria{
+    width: 150px;
+    height: 150px;
+    
+}
+.galeria img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.title{
+    padding-top: 30px;
+}
+.modal-body img{
+    width: auto;
+    height: auto;
+
+}

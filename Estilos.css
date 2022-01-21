@@ -107,6 +107,28 @@ p, li{
     color: black;
 }
 
+/*Footer*/
+
+#copy-area{
+    background-color: white;
+    border-bottom: 2px solid black;
+
+}
+
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: bold;
+    
+}
+#copy-area .container p{
+    color: black;
+}
+#copy-area .container #whats{
+    color: green;
+}
+
 /*Responsivo*/
 @media(max-width:768px){
     .container{
