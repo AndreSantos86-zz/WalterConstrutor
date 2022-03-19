@@ -1,8 +1,16 @@
 @charset "UTF8";
 .galeria{
-    width: 150px;
-    height: 150px;
     
+    display: flex;
+    padding: 10px;
+    
+    
+    
+}
+.galeria img{
+    padding: 10px;
+    width: 200px;
+    height: 150px;
 }
 .galeria img:hover{
     -webkit-transform: scale(2.1);
