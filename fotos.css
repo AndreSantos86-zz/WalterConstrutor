@@ -1,10 +1,10 @@
 @charset "UTF8";
+
+
 .galeria{
     
-    display: flex;
-    padding: 10px;
     
-    
+    padding: 10px;    
     
 }
 .galeria img{
@@ -22,8 +22,20 @@
 .title{
     padding-top: 30px;
 }
-.modal-body img{
-    width: auto;
-    height: auto;
 
+.modalVisual{ 
+    display:none; 
+    position:absolute;
+    z-index:1;
+    padding-top:100px;
+    left:50px;
+    top:0;
+    
+}
+
+.modalConteudo{
+    margin:auto;
+    display:block;
+    width:100%;
+    max-width:800px;
 }

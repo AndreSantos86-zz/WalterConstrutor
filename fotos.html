@@ -18,6 +18,7 @@
 
   <!--------------Fonte Awesome-------------------------->
   <script src="https://kit.fontawesome.com/664a7b0ef2.js" crossorigin="anonymous"></script>
+  <script src="funcoes.js"></script>
 
 
   <link rel="stylesheet" href="Estilos.css">
@@ -30,7 +31,7 @@
     <header id="cabecalho">
         <div class="container" id="nav-conteiner">
             <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img id="Logo" src="../WalterConstrutor/img/Logo.png"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarlink" aria-controls="navbarlink" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -55,38 +56,29 @@
       <div id="album">
         <div class="container">
           <h3 class="title">Obras concluidas</h3>
-          <!-- Button trigger modal -->
-          <div class="galeria " id="obrasConcluidas">
-            <img src="img/obras/Itaqui.jpg"  data-bs-toggle="modal" data-bs-target="#itaqui">
-            <img src="img/obras/foto1.jpg"  data-bs-toggle="modal" data-bs-target="#foto01">
-            <img src="img/obras/foto2.jpg"  data-bs-toggle="modal" data-bs-target="#foto02">
-            <img src="img/obras/foto3.jpg"  data-bs-toggle="modal" data-bs-target="#foto03">
-            <img src="img/obras/foto4.jpg"  data-bs-toggle="modal" data-bs-target="#foto04">
-            <img src="img/obras/foto5.jpg"  data-bs-toggle="modal" data-bs-target="#foto05">
-          </div>
-          <div class="container">
-            <h3 class="title">Obras em andamento</h3>
-            <!-- Button trigger modal -->
-            <div class="galeria  ">
-              <img src="img/obras/andamento.jpg"  data-bs-toggle="modal" data-bs-target="#foto9">            
-            </div>
           
-
-          <div class="modal fade" id="itaqui" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Foto 01</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span>&times;</span></button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="img/obras/Itaqui.jpg" class="rounded img-fluid">
-                  </div>                  
-                </div>
-              </div>
-            </div>
+          <div class="galeria" id="obrasConcluidas">
+            <img id="itaqui" src="img/obras/Itaqui.jpg" onclick="clique(this)">
+            <img id="foto1" src="img/obras/foto1.jpg" onclick="clique(this)" >
+            <img id="foto2" src="img/obras/foto2.jpg" onclick="clique(this)" >
+            <img id="foto3" src="img/obras/foto3.jpg" onclick="clique(this)" >
+            <img id="foto4" src="img/obras/foto4.jpg" onclick="clique(this)" >
+            <img id="foto5" src="img/obras/foto5.jpg" onclick="clique(this)" >
+          </div>          
         </div>
-      </div>          
+        <div class="container">
+          <h3 class="title">Obras em andamento</h3>
+          
+          <div class="galeria  ">
+            <img id="andamento" src="img/obras/andamento.jpg" onclick="clique(this)">            
+          </div>
+          <div id="janelaModal" class="modalVisual img-fluid">
+            <button><span class="close">&times;</span></button>
+            <img id = "imgModal" class="modalConteudo img-fluid">
+          </div>            
+      </div>  
+    </div>
+                
     </section>
     <!--Contatos-->  
     <section id="Contatos">
@@ -120,7 +112,7 @@
     <footer>
       <div id="copy-area">
         <div class="container">
-            <p> &copy; Desenvolvido por André Luis Santos <br/> <a href="https://www.facebook.com/andre.tecnico.eletronica" target=_blank><i id="face" class="fab fa-facebook"></i></a>   | <a href="https://wa.me/message/XLYUZIVPYHQLF1" target="_blank"> <i id="whats" class="fab fa-whatsapp"></i></a>  </p>
+            <p>  Desenvolvido por André Luis Santos <br/> <a href="https://www.facebook.com/andre.tecnico.eletronica" target=_blank><i id="face" class="fab fa-facebook"></i></a>   | <a href="https://wa.me/message/XLYUZIVPYHQLF1" target="_blank"> <i id="whats" class="fab fa-whatsapp"></i></a>  </p>
 
         </div>
     </div>
