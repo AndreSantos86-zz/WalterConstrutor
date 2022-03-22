@@ -1,14 +1,11 @@
-function clique(img){
-    var modal=document.getElementById('janelaModal');
-    var modalImg=document.getElementById("imgModal");
-    var btFechar=document.getElementsByClassName("close")[0];
+$(document).ready(function(){ // executar apos pagina carregada
+    $(".abrirModal").click(function() { 
+        var url = $(this).find("img").attr("src");// url recebe a imagem que sera aberta no modal
+        $("#myModal img").attr("src", url);//adiciona imagem na div
+        $("#myModal").modal("show");// mostra a imagem com o modal.
+      });
+})
 
-    modal.style.display="block";
-    modalImg.src=img.src;
-    
-    
-
-    btFechar.onclick=function(){
-          modal.style.display="none";
-    }
-}
+$(function(){
+    $("#footer").load("footer.html")
+})

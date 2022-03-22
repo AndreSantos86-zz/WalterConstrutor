@@ -27,10 +27,12 @@ p, li{
 #nav-conteiner {
     padding-top: 0;
     padding-bottom: 0;
+    
 }
 #Logo{
     width: 250px;
     color: #fff;
+    margin-left: 5px;
 }
 
 #navbarlink a {
@@ -38,6 +40,7 @@ p, li{
 }
 #navbar-expand-lg .navbar-nav .nav-link{
     padding: 1rem .5rem;
+    
 }
 
 /* Slides*/
@@ -127,6 +130,21 @@ p, li{
 }
 #copy-area .container #whats{
     color: green;
+}
+
+.container #whatsF{
+    position:fixed;
+    width:40px;
+    height:40px;
+    bottom:80px;
+    right:40px;
+    background-color:#25d366; 
+    color: white;
+    border-radius:50%;
+    text-align:center;    
+    font-size:35px;    
+    z-index:1030; 
+    
 }
 
 /*Responsivo*/
